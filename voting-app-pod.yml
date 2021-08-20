@@ -1,0 +1,15 @@
+---
+apiVersion: '3.8'
+kind: Pod
+metadata:
+ name: voting-pod
+ labels:
+   name: voting-pod
+   author: faizan
+spec:
+  containers:
+    - name: myvote
+      image: dockersamples/examplevotingapp_vote
+      ports:
+        - containerPort: 80
+...

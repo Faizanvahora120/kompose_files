@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myworker-pod
+  labels:
+    name: myworker-pod
+    author: faizan
+spec:
+  containers:
+    - name: myworker
+      image: dockersamples/examplevotingapp_worker
+...

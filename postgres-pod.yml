@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypostgres-pod
+  labels:
+    name: mypostgres-pod
+    author: faizan
+spec:
+  containers:
+    - name: mypostgres
+      image: postgres
+      ports:
+        - containerPort: 5432
+...
